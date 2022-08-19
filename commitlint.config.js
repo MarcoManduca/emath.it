@@ -1,4 +1,12 @@
-const { Linter } = require("eslint");
+//build: changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+// ci: changes to out CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+// docs: documentation only changes
+// feat: a new feature
+// fix: fix a bug
+// perf: a code change that improve performance
+// refactoring: a code change that neither fixes a bug nor adds a feature
+// style: changes that do not afect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+//test: adding missing tests or correcting existing tests
 
 module.exports = {
     extends: ["@commitlint/config-conventional"],
