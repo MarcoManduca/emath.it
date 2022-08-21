@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['oilproject.org'],
+    domains: ['static.oilproject.org'],
   },
 };
 

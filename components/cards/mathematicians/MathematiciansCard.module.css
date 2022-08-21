@@ -34,6 +34,13 @@
   gap: 0.5rem;
 }
 
+.card_body > h4 {
+  color: black;
+}
+.card_body > p {
+  color: black;
+}
+
 .tag {
   align-self: flex-start;
   padding: 0.25em 0.75em;
@@ -47,7 +54,7 @@
   color: #fafafa;
 }
 
-.card_body h4 {
+.card_body > h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
 }
@@ -70,9 +77,6 @@
 .user_info > small {
   color: #666;
 }
-
-h4,
-h5,
-p {
-  color: black;
+.user_info > h5 {
+  color: #666;
 }
