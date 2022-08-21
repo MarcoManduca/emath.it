@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images: [],
+  images: {
+    domains: ['oilproject.org'],
+  },
 };
 
 module.exports = nextConfig;
