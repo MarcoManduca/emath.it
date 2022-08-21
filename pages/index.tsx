@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ReactElement } from 'react';
 import MathematiciansCard from '../components/cards/mathematicians/MathematiciansCard';
 import { mockMathematiciansCardProps } from '../components/cards/mathematicians/MathematiciansCard.mocks';
@@ -12,7 +13,10 @@ const Home: NextPageWithLayout = () => {
   return (
     <section className={styles.main}>
       <h1 className={styles.title}>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        Welcome to{' '}
+        <Link href="/">
+          <a>e-Math</a>
+        </Link>
       </h1>
       <MathematiciansCard {...mockMathematiciansCardProps.base} />
     </section>

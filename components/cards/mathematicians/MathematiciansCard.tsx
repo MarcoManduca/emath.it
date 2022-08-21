@@ -24,8 +24,8 @@ const MathematiciansCard: React.FC<IMathematiciansCard> = ({
             src="https://static.oilproject.org/category/1855/cover/7ac99c9915b6a17442f5de4243b42868_large_.jpg"
             alt="card_image"
             className={styles.card_image}
-            width={600}
-            height={400}
+            width="600"
+            height="400"
           />
         </div>
         <div className={styles.card_body}>
@@ -39,8 +39,8 @@ const MathematiciansCard: React.FC<IMathematiciansCard> = ({
               src="/foto_profilo.jpg"
               alt="user_image"
               className={styles.user_image}
-              width={40}
-              height={40}
+              width="40"
+              height="40"
             />
             <div className={styles.user_info}>
               <h5>{author}</h5>
