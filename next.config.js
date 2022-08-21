@@ -5,6 +5,10 @@ const nextConfig = {
   images: {
     domains: ['static.oilproject.org'],
   },
+  i18n: {
+    locales: ['it'],
+    defaultLocale: 'it',
+  },
 };
 
 module.exports = nextConfig;
