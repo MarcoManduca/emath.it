@@ -1,6 +1,5 @@
 import { ReactElement } from 'react';
 import LayoutPrimary from '../components/layouts/primary/LayoutPrimary';
-import LayoutSidebar from '../components/layouts/sidebar/LayoutSidebar';
 import { NextPageWithLayout } from './page';
 
 const About: NextPageWithLayout = () => {
@@ -24,10 +23,5 @@ const About: NextPageWithLayout = () => {
 export default About;
 
 About.getLayout = (page: ReactElement) => {
-  return (
-    <LayoutPrimary>
-      <LayoutSidebar />
-      {page}
-    </LayoutPrimary>
-  );
+  return <LayoutPrimary>{page}</LayoutPrimary>;
 };

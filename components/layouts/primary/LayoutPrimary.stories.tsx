@@ -3,7 +3,7 @@ import { mockLayoutPrimaryProps } from './ LayoutPrimary.mocks';
 import LayoutPrimary, { ILayoutPrimary } from './LayoutPrimary';
 
 export default {
-  title: 'templates/LayoutPrimary',
+  title: 'layouts/LayoutPrimary',
   component: LayoutPrimary,
   argTypes: {},
 } as ComponentMeta<typeof LayoutPrimary>;

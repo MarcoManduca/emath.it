@@ -3,7 +3,7 @@ import { mockLayoutSidebarProps } from './ LayoutSidebar.mocks';
 import LayoutSidebar, { ILayoutSidebar } from './LayoutSidebar';
 
 export default {
-  title: 'templates/LayoutSidebar',
+  title: 'layouts/LayoutSidebar',
   component: LayoutSidebar,
   argTypes: {},
 } as ComponentMeta<typeof LayoutSidebar>;

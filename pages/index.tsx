@@ -3,7 +3,6 @@ import { ReactElement } from 'react';
 import MathematiciansCard from '../components/cards/mathematicians/MathematiciansCard';
 import { mockMathematiciansCardProps } from '../components/cards/mathematicians/MathematiciansCard.mocks';
 import LayoutPrimary from '../components/layouts/primary/LayoutPrimary';
-import LayoutSidebar from '../components/layouts/sidebar/LayoutSidebar';
 import styles from '../styles/Home.module.css';
 import { NextPageWithLayout } from './page';
 
@@ -18,7 +17,14 @@ const Home: NextPageWithLayout = () => {
           <a>e-Math</a>
         </Link>
       </h1>
-      <MathematiciansCard {...mockMathematiciansCardProps.base} />
+      <div className={styles.containermathematicians}>
+        <MathematiciansCard {...mockMathematiciansCardProps.base} />
+        <MathematiciansCard {...mockMathematiciansCardProps.base} />
+        <MathematiciansCard {...mockMathematiciansCardProps.base} />
+        <MathematiciansCard {...mockMathematiciansCardProps.base} />
+        <MathematiciansCard {...mockMathematiciansCardProps.base} />
+        <MathematiciansCard {...mockMathematiciansCardProps.base} />
+      </div>
     </section>
   );
 };
@@ -26,10 +32,5 @@ const Home: NextPageWithLayout = () => {
 export default Home;
 
 Home.getLayout = (page: ReactElement) => {
-  return (
-    <LayoutPrimary>
-      <LayoutSidebar />
-      {page}
-    </LayoutPrimary>
-  );
+  return <LayoutPrimary>{page}</LayoutPrimary>;
 };

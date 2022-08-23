@@ -1,5 +1,6 @@
 .container {
   margin: 1rem;
+  flex: 0 0 auto;
 }
 
 .container * {
